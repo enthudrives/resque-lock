@@ -43,4 +43,6 @@ UpdateNetworkGraph is queued at a time, regardless of the
 repo_id. Normally a job is locked using a combination of its
 class name and arguments.
 
+By default, the lock expires in 1 hour. If you have long running jobs, override the lock_timeout method in your job.
+
 [rq]: http://github.com/defunkt/resque
